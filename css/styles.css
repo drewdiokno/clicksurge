@@ -1,0 +1,25 @@
+body {
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* .navbar {
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+} */
+
+.navbar-brand {
+  font-size: 30px;
+  font-weight: 600px;
+}
+
+.navbar .nav-link {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.navbar .nav-item.active {
+  border-bottom: #444 3px solid;
+}
