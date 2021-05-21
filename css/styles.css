@@ -31,7 +31,7 @@ body {
 }
 
 .carousel-item {
-  height: 450px;
+  height: 600px;
 }
 
 .carousel-image-1 {
@@ -44,7 +44,7 @@ body {
 .carousel-image-2 {
   background: url('../img/seo_hero2.jpg');
   background-size: cover;
-  background-position: 0 -120px;
+  /* background-position: 0 -120px; */
     background-repeat: no-repeat;
 
 }
@@ -52,7 +52,7 @@ body {
 .carousel-image-3 {
   background: url('../img/seo_hero3.jpg');
   background-size: cover;
-  background-position: 0 -120px;
+  /* background-position: 0 -120px; */
     background-repeat: no-repeat;
 
 }
