@@ -37,18 +37,24 @@ body {
 .carousel-image-1 {
   background: url('../img/hero_image.jpg');
   background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 .carousel-image-2 {
   background: url('../img/seo_hero2.jpg');
   background-size: cover;
   background-position: 0 -120px;
+    background-repeat: no-repeat;
+
 }
 
 .carousel-image-3 {
   background: url('../img/seo_hero3.jpg');
   background-size: cover;
   background-position: 0 -120px;
+    background-repeat: no-repeat;
+
 }
 
 .dark:after {
