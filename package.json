@@ -1,0 +1,24 @@
+{
+  "name": "clicksurge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run lite",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drewdiokno/clicksurge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drewdiokno/clicksurge/issues"
+  },
+  "homepage": "https://github.com/drewdiokno/clicksurge#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
