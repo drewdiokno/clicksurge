@@ -23,3 +23,43 @@ body {
 .navbar .nav-item.active {
   border-bottom: #444 3px solid;
 }
+
+.jumbotron {
+  background-image: url('../img/hero_image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.carousel-item {
+  height: 450px;
+}
+
+.carousel-image-1 {
+  background: url('../img/hero_image.jpg');
+  background-size: cover;
+}
+
+.carousel-image-2 {
+  background: url('../img/seo_hero2.jpg');
+  background-size: cover;
+  background-position: 0 -120px;
+}
+
+.carousel-image-3 {
+  background: url('../img/seo_hero3.jpg');
+  background-size: cover;
+  background-position: 0 -120px;
+}
+
+.dark:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  opacity: 0.6;
+}
+
