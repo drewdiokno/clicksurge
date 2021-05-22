@@ -31,7 +31,7 @@ body {
 }
 
 .carousel-item {
-  height: 600px;
+  height: 560px;
 }
 
 .carousel-image-1 {
@@ -67,5 +67,9 @@ body {
   right: 0;
   background: black;
   opacity: 0.6;
+}
+
+#services {
+  background-color: #F2F3F9
 }
 
