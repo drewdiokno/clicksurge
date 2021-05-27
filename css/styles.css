@@ -73,3 +73,7 @@ body {
   background-color: #F2F3F9
 }
 
+.card {
+  border-radius: 10px;
+}
+
