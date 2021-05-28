@@ -11,18 +11,20 @@
   <!-- Additional CSS must be placed after Bootstrap CSS -->
   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="stylesheet" href="css/styles.css">
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+  <link rel="stylesheet" href="css/styles.css">
   <title>ClickSurge</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar-example">
 
   <!-- NAVBAR -->
-  <nav class="navbar sticky-top navbar-expand-sm navbar-light bg-light">
+  <nav id="navbar-scroll" class="navbar sticky-top navbar-expand-sm navbar-light bg-light">
     <div class="container">
       <a href="index.html" class="navbar-brand"><i class="fa fa-bolt"></i> ClickSurge</a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -31,32 +33,32 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="#home">
               Home
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="#about">
               About Us
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="#services">
               Services
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="#pricing">
               Pricing
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="#team">
               Our team
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="#contact">
               Contact
             </a>
           </li>
@@ -66,8 +68,10 @@
     </div>
   </nav>
 
+  <div data-spy="scroll" data-target="#navbar-scroll" data-offset="0"></div>
+
   <!-- HERO CAROUSEL -->
-  <section id="showcase">
+  <section id="home">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -124,7 +128,7 @@
   </section>
 
   <!-- WELCOME SECTION -->
-  <section id="welcome" class="py-5">
+  <section id="about" class="py-5">
     <div class="container">
       <div class="row mt-5">
         <div class="col-md-6 align-self-center text-sm-left">
@@ -283,6 +287,8 @@
     </div>
   </div>
 
+
+
   <!-- SERVICES SECTION -->
   <section id="pricing" class="py-5">
     <div class="container">
@@ -297,19 +303,19 @@
               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, exercitationem.</p>
               <ul class="list-group">
                 <li class="list-group-item">
-                  <i class="fas fa-check"></i> Feature One
+                  <i class="fa fa-check"></i> Feature One
                 </li>
                 <li class="list-group-item">
-                  <i class="fas fa-check"></i> Feature Two
+                  <i class="fa fa-check"></i> Feature Two
                 </li>
                 <li class="list-group-item">
-                  <i class="fas fa-check"></i> Feature Three
+                  <i class="fa fa-check"></i> Feature Three
                 </li>
                 <li class="list-group-item">
-                  <i class="fas fa-check"></i> Feature Four
+                  <i class="fa fa-check"></i> Feature Four
                 </li>
                 <li class="list-group-item">
-                  <i class="fas fa-check"></i> Feature Five
+                  <i class="fa fa-check"></i> Feature Five
                 </li>
               </ul>
               <a href="#" class="btn btn-danger btn-block mt-2  button-style">Order Now</a>
@@ -329,19 +335,19 @@
               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, exercitationem.</p>
               <ul class="list-group">
                 <li class="list-group-item">
-                  <i class="fas fa-check"></i> Feature One
+                  <i class="fa fa-check"></i> Feature One
                 </li>
                 <li class="list-group-item">
-                  <i class="fas fa-check"></i> Feature Two
+                  <i class="fa fa-check"></i> Feature Two
                 </li>
                 <li class="list-group-item">
-                  <i class="fas fa-check"></i> Feature Three
+                  <i class="fa fa-check"></i> Feature Three
                 </li>
                 <li class="list-group-item">
-                  <i class="fas fa-check"></i> Feature Four
+                  <i class="fa fa-check"></i> Feature Four
                 </li>
                 <li class="list-group-item">
-                  <i class="fas fa-check"></i> Feature Five
+                  <i class="fa fa-check"></i> Feature Five
                 </li>
               </ul>
               <a href="#" class="btn btn-danger btn-block mt-2 button-style">Order Now</a>
@@ -361,25 +367,73 @@
               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, exercitationem.</p>
               <ul class="list-group">
                 <li class="list-group-item">
-                  <i class="fas fa-check"></i> Feature One
+                  <i class="fa fa-check"></i> Feature One
                 </li>
                 <li class="list-group-item">
-                  <i class="fas fa-check"></i> Feature Two
+                  <i class="fa fa-check"></i> Feature Two
                 </li>
                 <li class="list-group-item">
-                  <i class="fas fa-check"></i> Feature Three
+                  <i class="fa fa-check"></i> Feature Three
                 </li>
                 <li class="list-group-item">
-                  <i class="fas fa-check"></i> Feature Four
+                  <i class="fa fa-check"></i> Feature Four
                 </li>
                 <li class="list-group-item">
-                  <i class="fas fa-check"></i> Feature Five
+                  <i class="fa fa-check"></i> Feature Five
                 </li>
               </ul>
               <a href="#" class="btn btn-danger btn-block mt-2  button-style">Order Now</a>
             </div>
             <div class="card-footer text-muted">
               1 Year Plan
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="p-4 bg-dark text-white">
+    <div class="container">
+      <h2 class="text-center">Testimonials</h2>
+      <hr>
+      <div class="row text-center">
+        <div class="col">
+          <div class="slider">
+            <div>
+              <blockquote class="blockquote">
+                <p class="mb-0">
+                  "Thank you for the SEO services you delivered. You helped my website attract new partners and promote
+                  my own services to
+                  a greater number of customers."
+                </p>
+                <footer class="blockquote-footer">Jose Flores from
+                  <cite title="Company 1">EC Construction</cite>
+                </footer>
+              </blockquote>
+            </div>
+            <div>
+              <blockquote class="blockquote">
+                <p class="mb-0">
+                  "ClickSurge is the only agency that provides high quality online marketing and promotion services. The
+                  members of their
+                  team are real professionals in search engine optimization."
+                </p>
+                <footer class="blockquote-footer">Mike Castro from
+                  <cite title="Company 2">Murrieta Landscaping</cite>
+                </footer>
+              </blockquote>
+            </div>
+            <div>
+              <blockquote class="blockquote">
+                <p class="mb-0">
+                  "Every team member did their job well and I appreciate it. The amount of online traffic shows!"
+                </p>
+                <footer class="blockquote-footer">Meghan Williams from
+                  <cite title="Company 3">Elk Grove Solar</cite>
+                </footer>
+              </blockquote>
             </div>
           </div>
         </div>
@@ -434,11 +488,6 @@
               <p>admin@clicksurge.com</p>
               <h4>Phone</h4>
               <p>555-555-5555</p>
-              <!--Google map-->
-              <!-- <div id="map-container-google-9" class="z-depth-1-half map-container-5" style="height: 200px">
-                <iframe src="https://maps.google.com/maps?q=sanfrancisco&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                  frameborder="0" style="border:0" allowfullscreen></iframe>
-              </div> -->
             </div>
           </div>
         </div>
@@ -490,32 +539,65 @@
     </div>
   </section>
 
-  <div class="container-fluid">
-    <div class="map-responsive">
-      <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=bay+area"
-        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
+  </div>
 
-    <!-- NEWSLETTER -->
-    <section id="newsletter" class="text-center p-5 bg-dark text-white">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h1>Sign Up For Our Newsletter</h1>
-            <hr>
-            <p>Keep up with our always upcoming news, updates, and publications. Enter your name and e-mail to subscribe
-              to
-              our
-              newsletter.</p>
-            <form class="form-inline justify-content-center">
-              <input type="text" class="form-control mb-2 mr-2" placeholder="Enter Name">
-              <input type="text" class="form-control mb-2 mr-2" placeholder="Enter Email">
-              <button class="btn btn-primary mb-2">Submit</button>
-            </form>
-          </div>
+  <!-- NEWSLETTER -->
+  <section id="newsletter" class="text-center p-5 bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Sign Up For Our Newsletter</h1>
+          <hr>
+          <p>Keep up with our always upcoming news, updates, and publications. Enter your name and e-mail to subscribe
+            to
+            our
+            newsletter.</p>
+          <form class="form-inline justify-content-center">
+            <input type="text" class="form-control mb-2 mr-2" placeholder="Enter Name">
+            <input type="text" class="form-control mb-2 mr-2" placeholder="Enter Email">
+            <button class="btn btn-primary mb-2">Submit</button>
+          </form>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <div class="footer-dark">
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-3 item">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="#">SEO</a></li>
+              <li><a href="#">Content Marketing</a></li>
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Brand Management</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-3 item">
+            <h3>About</h3>
+            <ul>
+              <li><a href="#">Company</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 item text">
+            <h3>ClickSurge</h3>
+            <p>We work in areas as diverse as search engine optimization, social media marketing, email marketing and
+              digital
+              marketing.</p>
+          </div>
+          <div class="col item social"><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i
+                class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i
+                class="fa fa-instagram"></i></a></div>
+        </div>
+        <p class="copyright">ClickSurge © 2021</p>
+      </div>
+    </footer>
+  </div>
 
 
 
@@ -525,27 +607,34 @@
 
 
 
-    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
+  <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
 
-    <script>
-      // Video Play
-      $(function () {
-        // Auto play modal video
-        $(".video").click(function () {
-          var theModal = $(this).data("target"),
-            videoSRC = $(this).attr("data-video"),
-            videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
-          $(theModal + ' iframe').attr('src', videoSRCauto);
-          $(theModal + ' button.close').click(function () {
-            $(theModal + ' iframe').attr('src', videoSRC);
-          });
+  <script>
+    // Video Play
+    $(function () {
+      // Auto play modal video
+      $(".video").click(function () {
+        var theModal = $(this).data("target"),
+          videoSRC = $(this).attr("data-video"),
+          videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+        $(theModal + ' iframe').attr('src', videoSRCauto);
+        $(theModal + ' button.close').click(function () {
+          $(theModal + ' iframe').attr('src', videoSRC);
         });
       });
-    </script>
+    });
+
+    $('.slider').slick({
+      infinite: true,
+      slideToShow: 1,
+      slideToScroll: 1,
+    })
+  </script>
 </body>
 
 </html>
