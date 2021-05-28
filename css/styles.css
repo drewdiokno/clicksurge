@@ -10,7 +10,7 @@ body {
 
 .navbar-brand {
   font-size: 30px;
-  font-weight: 600px;
+  font-weight: 700;
 }
 
 .navbar .nav-link {
@@ -55,6 +55,18 @@ body {
   /* background-position: 0 -120px; */
     background-repeat: no-repeat;
 
+}
+
+#welcome .welcome {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  letter-spacing: 1.5px;
+}
+
+.welcome-line {
+   width: 100px;
+  border: 1px solid #000;
 }
 
 .dark:after {
@@ -105,6 +117,36 @@ body {
   background-image: linear-gradient(315deg, #bdc3c7 0%, #2c3e50 74%);
 }
 
+#team {
+   background-image: linear-gradient(315deg, #bdc3c7 0%, #2c3e50 74%);
+}
+
+hr {
+  width: 100px;
+  border: 1px solid #fff;
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:50%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.button-style {
+  border-radius: 35px;
+}
+
+.card-header-gradient {
+   background-image: linear-gradient(315deg, #bdc3c7 0%, #2c3e50 74%);
+}
 
 
 
