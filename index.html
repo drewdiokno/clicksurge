@@ -21,7 +21,7 @@
   <title>ClickSurge</title>
 </head>
 
-<body data-spy="scroll" data-target="#navbar-example">
+<body data-spy="scroll" data-target="#navbar-scroll" data-offset="50">
 
   <!-- NAVBAR -->
   <nav id="navbar-scroll" class="navbar sticky-top navbar-expand-sm navbar-light bg-light">
@@ -32,7 +32,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="#home">
               Home
             </a>
@@ -68,7 +68,7 @@
     </div>
   </nav>
 
-  <div data-spy="scroll" data-target="#navbar-scroll" data-offset="0"></div>
+
 
   <!-- HERO CAROUSEL -->
   <section id="home">
@@ -87,7 +87,8 @@
               <p class="lead d-none d-sm-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quae
                 at dicta magni
                 eveniet repellendus delectus maxime nihil ullam pariatur!</p>
-              <a href="#" class="btn btn-danger btn-lg button-style">Contact Us</a>
+              <a href="#" class="btn btn-danger btn-lg button-style" data-toggle="modal"
+                data-target="#contactModal">Contact Us</a>
             </div>
           </div>
         </div>
@@ -99,7 +100,8 @@
               <p class="lead d-none d-sm-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quae
                 at dicta magni
                 eveniet repellendus delectus maxime nihil ullam pariatur!</p>
-              <a href="#" class="btn btn-primary btn-lg button-style">Learn More</a>
+              <a href="#" class="btn btn-primary btn-lg button-style" data-toggle="modal"
+                data-target="#contactModal">Learn More</a>
             </div>
           </div>
         </div>
@@ -111,7 +113,8 @@
               <p class="lead d-none d-sm-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quae
                 at dicta magni
                 eveniet repellendus delectus maxime nihil ullam pariatur!</p>
-              <a href="#" class="btn btn-success btn-lg button-style">Free Consultation</a>
+              <a href="#" class="btn btn-success btn-lg button-style" data-toggle="modal"
+                data-target="#contactModal">Free Consultation</a>
             </div>
           </div>
         </div>
@@ -142,7 +145,8 @@
             can help you build a sustainable, meaningful relationship with your clients by engaging them with your brand
             using
             social media.</p>
-          <a href="#" class="btn btn-outline-dark btn-lg button-style">Get Started</a>
+          <a href="#" class="btn btn-outline-dark btn-lg button-style" data-toggle="modal"
+            data-target="#contactModal">Get Started</a>
         </div>
         <div class="col-md-6 d-none d-md-block">
           <img src="img/data_chart.svg" alt="" height="400" width="600">
@@ -539,8 +543,6 @@
     </div>
   </section>
 
-  </div>
-
   <!-- NEWSLETTER -->
   <section id="newsletter" class="text-center p-5 bg-dark text-white">
     <div class="container">
@@ -599,14 +601,45 @@
     </footer>
   </div>
 
-
-
-
-
-
-
-
-
+  <!-- CONTACT MODAL -->
+  <div id="contactModal" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Contact Us</h3>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-12">
+                  <label class="sr-only" for="name">Your Name</label>
+                  <input type="text" class="form-control form-control-sm" id="name" placeholder="Name">
+                </div>
+                <div class="form-group col-12">
+                  <label class="sr-only" for="email">Your email</label>
+                  <input type="email" class="form-control form-control-sm" id="email" placeholder="Email">
+                </div>
+                <div class="form-group col-12">
+                  <label class="sr-only" for="email">Your number</label>
+                  <input type="tel" class="form-control form-control-sm" id="phone" placeholder="Phone number">
+                </div>
+                <div class="col-12 form-group">
+                  <label for="exampleFormControlTextarea1">Message</label>
+                  <textarea class="form-control" id="message" rows="3"></textarea>
+                </div>
+              </div>
+              <div class="form-row">
+                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                <button type="submit" class="btn btn-primary btn-sm ml-1">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
@@ -634,6 +667,7 @@
       slideToShow: 1,
       slideToScroll: 1,
     })
+
   </script>
 </body>
 

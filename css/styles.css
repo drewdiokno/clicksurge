@@ -21,8 +21,13 @@ body {
   font-weight: 600;
 }
 
-.navbar .nav-item.active {
+/* .navbar .nav-item.active {
   border-bottom: #444 3px solid;
+} */
+
+.active {
+  border-bottom: #444 3px solid;
+
 }
 
 .jumbotron {
@@ -99,6 +104,17 @@ body {
   position: relative;
   min-height: 200px;
   background: url('../img/data.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  /* background-position: -200px -100px; */
+  text-align: center;
+  color: #fff;
+}
+
+#testimonials {
+  position: relative;
+  min-height: 200px;
+  background: url('../img/dark_background.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: -200px -100px;
